@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.toos.lxh.deposittest.MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <!-- 客户姓名-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/client_name"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_name"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/set_name"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dibu"
+            />
+
+        <!-- 证件类型-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:id="@+id/rlcertificate_type"
+            >
+
+            <TextView
+                android:id="@+id/tv_certificate_type"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/certificate_type"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_select_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_certificate_type"
+                android:layout_marginLeft="20dp"
+                android:text="@string/select_type"
+                android:layout_marginRight="50dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_rigth"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dibu"
+            />
+
+        <!-- 证件号码 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_certificate_phone"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/certificate_phone"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/et_certificate_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_certificate_phone"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/set_certificate_phone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dibu"
+            />
+
+        <!-- 开户银行-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:id="@+id/rl_open_an_acccount"
+            >
+
+            <TextView
+                android:id="@+id/tv_open_an_account"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/open_an_account"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_open_an_account"
+                android:layout_marginLeft="20dp"
+                android:text="@string/select_open_an_account"
+                android:layout_marginRight="50dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_rigth"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dibu"
+            />
+
+
+        <!-- 省份 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:id="@+id/rl_province"
+            >
+
+            <TextView
+                android:id="@+id/tv_province"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/province"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_province"
+                android:layout_marginLeft="20dp"
+                android:text="@string/select_province"
+                android:layout_marginRight="50dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_rigth"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dibu"
+            />
+
+        <!-- 城市-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:id="@+id/rl_city"
+            >
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_city"
+                android:layout_marginLeft="20dp"
+                android:text="@string/select_city"
+                android:layout_marginRight="50dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_rigth"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dibu"
+            />
+
+        <!-- 开户行 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:id="@+id/rl_opening_bank"
+            >
+
+            <TextView
+                android:id="@+id/tv_opening_bank"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/opening_bank"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_opening_bank"
+                android:layout_marginLeft="20dp"
+                android:text="@string/select_opening_bank"
+                android:layout_marginRight="50dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/iv_rigth"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dibu"
+            />
+
+        <!-- 银行卡号 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_credit_card_numbers"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/credit_card_numbers"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_credit_card_numbers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_credit_card_numbers"
+                android:background="@null"
+                android:hint="@string/set_credit_card_numbers"
+                android:maxLines="1"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dibu"
+            />
+
+
+        <!-- 手机号码 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_cell_phone_number"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cell_phone_number"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_cell_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_cell_phone_number"
+                android:background="@null"
+                android:hint="@string/set_cell_phone_number"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dibu"
+            />
+
+        <!-- 动态码 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_dynamic_code"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="@string/dynamic_code"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/et_dynamic_code"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@+id/tv_dynamic_code"
+                android:background="@null"
+                android:layout_marginLeft="20dp"
+                android:hint="@string/set_dynamic_code"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:layout_marginRight="100dp"
+                />
+
+            <Button
+                android:id="@+id/bt_gain_code"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="14dp"
+                android:background="@drawable/shape"
+                android:text="@string/free_Access"
+                android:textColor="@color/button_colcor"
+                android:textSize="12dp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dibu"
+            />
+
+        <TextView
+            android:id="@+id/tv_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/list_the_limit"
+            android:textSize="14sp"
+            android:autoLink="all"
+            android:textColor="@color/button_colcor"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <!--确认开通-->
+
+        <Button
+            android:id="@+id/bt_confirm_the_opening"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/confirm_the_opening"
+            android:text="@string/confirm_the_opening"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_confirm_the_opening"
+            android:textSize="12sp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/tv_sh_kk_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="《上海银行委托扣款业务服务协议》"
+            android:textSize="12sp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:textColor="#60C65D"
+            />
+        <TextView
+            android:id="@+id/tv_sh_jd_agreement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="《上海银行网络借贷交易资金存管业务三方协议》"
+            android:textSize="12sp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:textColor="#60C65D"
+            android:layout_marginBottom="10dp"
+            />
+    </LinearLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>
